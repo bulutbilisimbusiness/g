@@ -1,15 +1,19 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Movie } from '../movie';
 @Component({
   selector: 'app-movies',
-  imports: [CommonModule],
   standalone: true,
-  templateUrl: '../movies/movies.component.html',
+  imports: [],
+  templateUrl: 'movies.component.html',
 })
 export class MoviesComponent {
-  movies = [
-    { title: 'Inception', director: 'Christopher Nolan' },
-    { title: 'The Matrix', director: 'The Wachowskis' },
-    { title: 'Interstellar', director: 'Christopher Nolan' },
-  ];
+  title: string = 'Movie Listt';
+  movie: Movie = {
+    id: 1,
+    name: 'Movie Name',
+  };
+
+  getName() {
+    return this.title;
+  }
 }

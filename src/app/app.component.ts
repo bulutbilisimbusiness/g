@@ -2,12 +2,18 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { RouterOutlet } from '@angular/router';
-import { MoviesComponent } from './movies/movies.component'; // MoviesComponent'i import edin
-
+import { MovieComponent } from './movie/movie.component';
+import { MoviesComponent } from './movies/movies.component';
 @Component({
   selector: 'app-root',
-  standalone: true, // Standalone bileşen olarak işaretleyin
-  imports: [CommonModule, FormsModule, RouterOutlet, MoviesComponent], // Gerekli modülleri ve bileşenleri ekleyin
+  standalone: true,
+  imports: [
+    CommonModule,
+    FormsModule,
+    RouterOutlet,
+    MoviesComponent,
+    MovieComponent,
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
