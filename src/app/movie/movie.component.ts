@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
 @Component({
   selector: 'app-movie',
-  imports: [CommonModule],
   standalone: true,
-  templateUrl: '../movie/movie.component.html',
-  styleUrls: ['../movie/movie.component.css'],
+  imports: [CommonModule],
+  templateUrl: './movie.component.html',
+  styleUrls: ['./movie.component.css'],
 })
 export class MovieComponent {
   movies = [
